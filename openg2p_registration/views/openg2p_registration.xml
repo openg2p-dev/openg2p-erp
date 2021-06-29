@@ -154,9 +154,6 @@
                                     </tree>
                                 </field>
                             </group>
-                            <group name="internal_notes_right">
-                                
-                            </group>
                         </group>
                         <separator string="Registration Summary"/>
                         <field name="description" placeholder="Details of Registrations..."/>
@@ -181,6 +178,7 @@
         <record id="wizard_view" model="ir.ui.view">
             <field name="name">Update Attendance</field>
             <field name="model">openg2p.registration.update_att</field>
+            <field name="target">inline</field>
             <field name="arch" type="xml">
                 <form>
                     <group>
